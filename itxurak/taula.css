@@ -1,0 +1,110 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.details-bar.cleanslate {
+  display: none !important;
+}
+
+body {
+  background-color: #aaffff;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  color: #000000;
+}
+
+#burua {
+  background-color:#000033;
+  color: #ffffff;
+  width:100%;
+
+  /* Flexbox */
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+header h1 {
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  padding: 10px
+}
+
+header h2 {
+  background: #0000aa;
+  font-family: "Merriweather", serif;
+  padding: 10px 100px;
+}
+
+h3, h4, h5, h6{
+  font-family: "Merriweather", serif;
+}
+
+main{
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+table{
+  margin: 20px 0;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td{
+  border: 1px solid blue;
+}
+
+.izena{
+  padding-left: 10px;
+  width: 220px;
+}
+
+.puntuak, .sailkapena{
+  padding: 0 5px;
+  text-align: center;
+}
+
+.zenbakia, .emaitza{
+  text-align: center;
+  width: 25px;
+  height: 25px;
+}
+
+.beltza{
+  background-color: black
+}
+
+@media screen and (max-width: 360px) {
+  /* Rules when screen is up to 360px wide */
+
+  header h1{
+    font-size: 18px;
+  }
+  header h2 {
+    font-size: 16px;
+  }
+
+  main{
+      font-size: 8px;
+  }
+  table{
+      margin: 5px 0;
+  }
+    .zenbakia, .emaitza{
+      text-align: center;
+      width: 12px;
+      height: 2px;
+    }
+  }
