@@ -16,10 +16,9 @@ body {
   background-color: #aaffff;
   font-family: "Open Sans", sans-serif;
   padding: 5px 25px;
-  color: #000000;
 }
 
-#burua {
+.burua {
   background-color:#000033;
   color: #ffffff;
   width:100%;
@@ -32,22 +31,21 @@ body {
 }
 
 header h1 {
-  font-family: "Merriweather", serif;
-  font-size: 36px;
+  font-size: 2.5em;
   padding: 10px
 }
 
 header h2 {
+  font-size: 2em;
   background: #0000aa;
-  font-family: "Merriweather", serif;
   padding: 10px 100px;
 }
 
-h3, h4, h5, h6{
+h1, h2, h3, h4 {
   font-family: "Merriweather", serif;
 }
 
-#menua {
+.menua {
   width:100%;
 
   /* Flexbox */
@@ -123,7 +121,7 @@ figure{
 }
 
 figcaption{
-  font-size: 12px;
+  font-size: 0.75em;
   width:100%
 }
 
@@ -136,34 +134,46 @@ figure .taktika{
 }
 
 
-@media screen and (max-width: 400px) {
-  /* Rules when screen is up to 400px wide */
+@media screen and (max-width: 580px) {
+  /* Rules when screen is up to 580px wide */
 
-header h1{
-  font-size: 18px;
-}
-header h2 {
-  font-size: 16px;
-}
-header nav a {
-  font-size: 8px;
-}
-p {
-  font-size: 12px;
-}
-main aside{
-  width: 100%;
-}
+  body {
+    padding: 5px 10px;
+  }
+
+  header h1{
+    font-size: 18px;
+  }
+
+  header h2 {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+
+  header nav a {
+    font-size: 8px;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
   .diagrama{
     width: 100%;
   }
+
 }
 
 
 
-@media screen and (min-width: 401px) and (max-width: 768px) {
-  /* Rules when screen is between 401px and 768px wide */
-}
+@media screen and (min-width: 581px) and (max-width: 768px) {
+  /* Rules when screen is between 581px and 768px wide */
+
 
 @media screen and (min-width: 769px) {
   /* Rules when screen is wider than 768px */
